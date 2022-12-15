@@ -27,6 +27,7 @@ html {
 body {
   background-color: var(--dark-blue);
   color: var(--gray-purple);
+  text-align: center;
 }
 
 /* Set base text to mobile first */
@@ -120,10 +121,60 @@ input[type="email"]:active {
   margin: 0 auto;
 }
 
+/* Banner related */
+
 header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin-top: 2.6667rem;
+}
+
+.logo {
+  align-self: center;
+  margin-bottom: 4.433rem;
+}
+
+.banner {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(100%, 375px);
+  grid-template-rows: 230px auto;
+}
+
+.banner-img {
+  background-image: url(/imgs/illustration-hero-mobile.png);
+  background-size: cover;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  margin-bottom: 3.367rem;
+}
+
+@media screen and (max-width: 375px) {
+  background-image: url(/imgs/illustration-hero-mobile.png);
+}
+
+.banner-copy {
+  display: flex;
+  max-width: 505px;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 0 24px;
+}
+
+.banner-title {
+  padding: 0 2.5rem;
+}
+
+.banner-toggle_container {
+  display: flex;
+  height: 42px;
+  justify-content: center;
+  align-content: center;
+}
+
+.banner-para {
+  margin-bottom: 2.1333rem;
 }
 
 /* Mobile width 375 */
