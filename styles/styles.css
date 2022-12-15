@@ -223,7 +223,6 @@ header {
 .toggle-outside {
   border-radius: 50%;
   padding: 10px;
-  /* transition: opacity 0.3s ease-in-out; */
 }
 
 .toggle-switch,
@@ -231,15 +230,14 @@ header {
   border-radius: 50%;
   border: 2px solid var(--white);
   position: absolute;
-  height: 6px;
-  width: 6px;
-  /* transition: all 0.3s ease-in-out; */
 }
 
 .toggle-inside {
+  height: 6px;
+  width: 6px;
   bottom: 7px;
   left: 7px;
-  animation: toggle 3s infinite;
+  animation: toggle 3s infinite 1.75s;
 }
 
 .toggle-verticle {
@@ -296,5 +294,10 @@ header {
 
   h3 {
     margin-bottom: 1.5333rem;
+  }
+
+  .banner-copy {
+    max-width: 730px;
+    padding: 0 80px;
   }
 }
