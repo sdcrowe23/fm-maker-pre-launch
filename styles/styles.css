@@ -160,6 +160,7 @@ header {
   flex-direction: column;
   padding: 0 24px;
   margin-top: 3.367rem;
+  margin-bottom: 144px;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
 }
@@ -237,7 +238,7 @@ header {
   width: 6px;
   bottom: 7px;
   left: 7px;
-  animation: toggle 3s infinite 1.75s;
+  animation: toggle 3s infinite 2s;
 }
 
 .toggle-verticle {
