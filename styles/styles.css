@@ -179,6 +179,42 @@ header {
   margin-bottom: 2.1333rem;
 }
 
+/* Toggle  */
+
+.toggle-switch {
+  width: 26px;
+}
+
+/* targets  */
+.toggle-switch,
+.toggle-outside {
+  border-radius: 50%;
+  padding: 10px;
+  /* transition: opacity 0.3s ease-in-out; */
+}
+
+.toggle-switch,
+.toggle-inside {
+  border-radius: 50%;
+  border: 2px solid var(--white);
+  position: absolute;
+  height: 6px;
+  width: 6px;
+  /* transition: all 0.3s ease-in-out; */
+}
+
+.toggle-inside {
+  top: 7px;
+  left: 7px;
+}
+
+.toggle-verticle {
+  background-color: var(--dark-blue);
+  border-radius: 13px;
+  width: 0px;
+  height: 42px;
+}
+
 /* Mobile width 375 */
 @media screen and (min-width: 375px) {
   .hero {
