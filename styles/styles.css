@@ -1,3 +1,150 @@
-/* Create base styles */
-/* Add design styles */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap");
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Set design spec */
+:root {
+  font-size: 0.9375rem;
+  --teal: #3ee9e5;
+  --white: #ffffff;
+  --faint-white: rgba(250, 250, 250, 0.4);
+  --purple: #093f68;
+  --dark-blue: #080c20;
+  --gray-purple: #777f98;
+  --errors: #ff2965;
+}
+
+html {
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: var(--dark-blue);
+  color: var(--gray-purple);
+}
+
+/* Set base text to mobile first */
+
+h1 {
+  margin: 0;
+  margin-bottom: 1.5333rem;
+  font-size: 2.13333rem;
+  line-height: 2.6667rem;
+  font-weight: 800;
+  color: var(--white);
+}
+
+h2 {
+  margin-bottom: 1.8rem;
+  font-size: 1.6rem;
+  line-height: 1.366em;
+  font-weight: 800;
+  color: var(--white);
+}
+
+h3 {
+  margin-bottom: 0.7334rem;
+  font-size: 1.2rem;
+  line-height: 1.639rem;
+  font-weight: 800;
+  color: var(--white);
+}
+
+p {
+  font-weight: 500;
+  line-height: 1.6666rem;
+}
+
+/* Set button design  */
+
+button {
+  padding: 0.6em 1.066em;
+  background-color: var(--teal);
+  border: 2px solid var(--teal);
+  border-radius: 1.5em;
+  color: var(--gray-purple);
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  line-height: 1.6666rem;
+  font-size: inherit;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 2px solid var(--teal);
+}
+
+button:active {
+  background-color: transparent;
+  border: 2px solid var(--teal);
+}
+
+/* Set input design */
+
+input[type="email"] {
+  background-color: var(--purple);
+  border: 2px solid var(--purple);
+  font-family: inherit;
+  outline: none;
+  line-height: 1.6666rem;
+  color: inherit;
+  padding: 0.6em 1.066em;
+  border-radius: 1.5em;
+  color: var(--faint-white);
+}
+
+input[type="email"]:hover {
+  border: 2px solid var(--teal);
+}
+
+input[type="email"]:focus {
+  border: 2px solid var(--teal);
+}
+
+input[type="email"]:active {
+  border: 2px solid var(--teal);
+}
+
 /* Add active and error states */
+
+/* Mobile width 375 */
+@media screen and (min-width: 375px) {
+  .hero {
+    background-image: url(/imgs/illustration-hero-mobile.png);
+  }
+}
+
+/* Tablet width 768 */
+@media screen and (min-width: 768px) {
+  h1 {
+    margin-bottom: 1.6rem;
+  }
+
+  .hero {
+    background-image: url();
+  }
+}
+
+/* Desktop width 1440 */
+@media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 3.2rem;
+    line-height: 1.1667;
+    margin-bottom: 1.6rem;
+  }
+
+  h2 {
+    margin-bottom: 1.6rem;
+  }
+
+  h3 {
+    margin-bottom: 1.5333rem;
+  }
+}
