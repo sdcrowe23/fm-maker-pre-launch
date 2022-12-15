@@ -52,9 +52,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- Netlify
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Netlify (for hosting)
 
 ### What I learned
 
@@ -68,14 +66,12 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
 ### Useful resources
 
 - [CSS-Tricks | Overriding Default Button Styles](https://css-tricks.com/overriding-default-button-styles/) - A great resources because...
 - [CSS-Tricks | Small Tweaks That Can Make a Huge Impact on Your Website’s Accessibility](https://css-tricks.com/small-tweaks-can-make-huge-impact-websites-accessibility/#article-header-id-2) - This is an amazing article which helped me finally understand XYZ...
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Codepen | HTML + pure CSS Vertical Toggle Switch](https://codepen.io/mgzme/pen/OqqeLM) - This codepen by Marco Gomez helped me understand how to make a verticle toggle switch
+- [W3Schools | Animations](https://www.w3schools.com/css/css3_animations.asp) - This helped me understand how animations work
 
 ## Author
 
