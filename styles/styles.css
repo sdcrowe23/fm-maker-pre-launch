@@ -114,6 +114,18 @@ input[type="email"]:active {
 
 /* Add active and error states */
 
+/* Wrapper */
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.6667rem;
+}
+
 /* Mobile width 375 */
 @media screen and (min-width: 375px) {
   .hero {
@@ -127,13 +139,25 @@ input[type="email"]:active {
     margin-bottom: 1.6rem;
   }
 
+  header {
+    padding-left: 2.6rem;
+    margin-top: 3.2rem;
+    justify-content: flex-start;
+  }
+
   .hero {
     background-image: url();
   }
 }
 
+/* Media Queries */
+
 /* Desktop width 1440 */
 @media screen and (min-width: 1440px) {
+  header {
+    padding-left: 0;
+  }
+
   h1 {
     font-size: 3.2rem;
     line-height: 1.1667;
