@@ -181,6 +181,25 @@ header {
 
 /* Toggle  */
 
+@keyframes toggle {
+  0% {
+    bottom: 7px;
+  }
+
+  50% {
+    bottom: 25px;
+    opacity: 0.1;
+  }
+
+  75% {
+  }
+
+  100% {
+    bottom: 7px;
+    opacity: 1;
+  }
+}
+
 .toggle-switch {
   width: 26px;
 }
@@ -204,8 +223,11 @@ header {
 }
 
 .toggle-inside {
-  top: 7px;
+  bottom: 7px;
   left: 7px;
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
+  animation: toggle 3s infinite;
 }
 
 .toggle-verticle {
