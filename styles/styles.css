@@ -181,6 +181,20 @@ header {
 
 /* Toggle  */
 
+@keyframes showToggle {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes toggle {
   0% {
     bottom: 7px;
@@ -225,8 +239,6 @@ header {
 .toggle-inside {
   bottom: 7px;
   left: 7px;
-  animation: name duration timing-function delay iteration-count direction
-    fill-mode;
   animation: toggle 3s infinite;
 }
 
@@ -235,6 +247,9 @@ header {
   border-radius: 13px;
   width: 0px;
   height: 42px;
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
+  animation: showToggle linear 3s;
 }
 
 /* Mobile width 375 */
