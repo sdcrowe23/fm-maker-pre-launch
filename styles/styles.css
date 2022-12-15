@@ -147,7 +147,6 @@ header {
   background-size: cover;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-  margin-bottom: 3.367rem;
 }
 
 @media screen and (max-width: 375px) {
@@ -160,6 +159,9 @@ header {
   margin: 0 auto;
   flex-direction: column;
   padding: 0 24px;
+  margin-top: 3.367rem;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
 }
 
 .banner-title {
