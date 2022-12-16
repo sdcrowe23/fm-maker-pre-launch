@@ -433,9 +433,7 @@ main {
 /* Notified Section */
 
 .notified {
-  margin-bottom: 164px;
-  /* display: flex;
-  justify-content: center; */
+  margin-bottom: 110px;
 }
 
 .notified-wrapper {
@@ -446,6 +444,7 @@ main {
 
 .notified-wrapper h2 {
   margin-bottom: 31px;
+  padding: 0 40px;
 }
 
 .notified-form {
@@ -456,6 +455,13 @@ main {
 
 .notified-form input {
   flex: 1;
+}
+
+/* Footer */
+
+footer {
+  margin-bottom: 110px;
+  padding: 0 24px;
 }
 
 /*
