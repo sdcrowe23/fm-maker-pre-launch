@@ -28,6 +28,7 @@ body {
   background-color: var(--dark-blue);
   color: var(--gray-purple);
   text-align: center;
+  height: 2000px;
 }
 
 /* Set base text to mobile first */
@@ -128,6 +129,7 @@ header {
   flex-direction: column;
   justify-content: center;
   margin-top: 2.6667rem;
+  margin-bottom: 144px;
 }
 
 .logo {
@@ -160,7 +162,6 @@ header {
   flex-direction: column;
   padding: 0 24px;
   margin-top: 3.367rem;
-  margin-bottom: 144px;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
 }
@@ -181,39 +182,6 @@ header {
 }
 
 /* Toggle  */
-
-@keyframes showToggle {
-  0% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes toggle {
-  0% {
-    bottom: 7px;
-  }
-
-  50% {
-    bottom: 25px;
-    opacity: 0.1;
-  }
-
-  75% {
-  }
-
-  100% {
-    bottom: 7px;
-    opacity: 1;
-  }
-}
 
 .toggle-switch {
   width: 26px;
@@ -251,6 +219,93 @@ header {
   animation: showToggle linear 3s;
 }
 
+/* Toggle animation */
+@keyframes showToggle {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes toggle {
+  0% {
+    bottom: 7px;
+  }
+
+  50% {
+    bottom: 25px;
+    opacity: 0.1;
+  }
+
+  75% {
+  }
+
+  100% {
+    bottom: 7px;
+    opacity: 1;
+  }
+}
+
+/* Main */
+
+main {
+  padding: 0 24px;
+}
+
+/* Benefits section */
+
+.benefits-wrapper {
+  max-width: 573px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+  max-width: 515px;
+  align-items: center;
+  margin-bottom: 56px;
+}
+
+.benefit-end {
+  margin-left: auto;
+}
+
+.benefit-para {
+  max-width: 340px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  background-color: var(--purple);
+  border-radius: 48px;
+  width: 120px;
+  height: 124px;
+  padding: 22px 30px;
+  margin-bottom: 32px;
+
+  text-align: center;
+}
+
+.icon-container img {
+  flex: 1;
+}
+
+/*
+//////// 
+////////// MEDIA QUERIES
+//////// 
+*/
+
 /* Mobile width 375 */
 @media screen and (min-width: 375px) {
   .hero {
@@ -272,6 +327,16 @@ header {
 
   .hero {
     background-image: url();
+  }
+
+  .benefit {
+    flex-direction: row;
+    text-align: left;
+    gap: 55px;
+  }
+
+  .icon-container {
+    margin-bottom: 0;
   }
 }
 
