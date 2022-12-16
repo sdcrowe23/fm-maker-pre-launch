@@ -16,6 +16,7 @@
   --faint-white: rgba(250, 250, 250, 0.4);
   --purple: #093f68;
   --dark-blue: #080c20;
+  --faint-dark-blue: rgba(8, 12, 32, 0.6);
   --gray-purple: #777f98;
   --errors: #ff2965;
 }
@@ -297,10 +298,142 @@ main {
   text-align: center;
 }
 
+/* Pricing Section */
+
+.price-plans {
+  margin-bottom: 144px;
+}
+
+.price-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.card-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.card-wrapper ul {
+  list-style-type: none;
+}
+
+/* Card In General */
+
+.card {
+  text-align: left;
+  display: grid;
+}
+
+.card figure {
+  position: relative;
+  z-index: 10;
+  padding-left: 30px;
+}
+
+.card-copy {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+  border-radius: 8px;
+}
+
+.card-copy_title {
+  margin-bottom: 1.2667rem;
+}
+
+.card-copy_para {
+  margin-bottom: 26px;
+}
+
+.card-list_title {
+  font-size: 2.667rem;
+  font-weight: 800;
+  margin-bottom: 1.267rem;
+}
+
+.card-list_title-second {
+  font-size: 1rem;
+  color: var(--faint-dark-blue);
+  font-weight: 500;
+  margin-left: 7.5px;
+}
+
+.card-copy ul li {
+  margin-bottom: 12px;
+  line-height: 25px;
+}
+
+.card-free .check-icon {
+  color: var(--white);
+}
+
+.check-icon {
+  color: inherit;
+  margin-right: 15px;
+}
+
+/* Card Free Related */
+
+.card-free {
+  grid-template-columns: minmax(auto, 375px);
+  grid-template-rows: 23px 23px auto;
+}
+
+.card-free figure {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.card-copy_free {
+  padding: 61px 29px 32px 29px;
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+.card-copy_free-para {
+  color: var(--faint-white);
+}
+
+/* Card Paid Related */
+
+.card-paid {
+  grid-template-columns: minmax(auto, 375px);
+  grid-template-rows: 32.5px 32.5px auto;
+}
+
+.card-paid figure {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.card-copy_paid {
+  padding: 61px 29px 32px 29px;
+  color: var(--dark-blue);
+  background-color: var(--teal);
+}
+
+.card-copy_paid h3 {
+  color: inherit;
+}
+
+.card-list_title-paid,
+.card-list_title-free {
+  display: flex;
+  align-items: center;
+  line-height: 54.64px;
+}
+
+.card-copy_paid-para {
+  color: var(--faint-dark-blue);
+}
+
 /*
-//////// 
-////////// MEDIA QUERIES
-//////// 
+///////////////////////////////////
+////////// MEDIA QUERIES //////////
+///////////////////////////////////
 */
 
 /* Mobile width 375 */
@@ -331,6 +464,8 @@ main {
     background-image: url();
   }
 
+  /* BENEFITS SECTION */
+
   .benefit {
     flex-direction: row;
     text-align: left;
@@ -349,6 +484,33 @@ main {
   .benefit-1,
   .benefit-3 {
     align-self: flex-end;
+  }
+
+  /* PRICING SECTION */
+
+  .price-plans {
+    display: flex;
+    justify-content: center;
+  }
+
+  .price-wrapper {
+    max-width: 573px;
+  }
+
+  .card-wrapper {
+    align-items: center;
+  }
+
+  .card {
+    max-width: 445px;
+  }
+
+  .card-free {
+    grid-template-columns: minmax(auto, 445px);
+  }
+
+  .card-paid {
+    grid-template-columns: minmax(auto, 445px);
   }
 }
 
@@ -374,6 +536,8 @@ main {
     margin-bottom: 1.5333rem;
   }
 
+  /* BENEFITS SECTION */
+
   .banner-copy {
     max-width: 730px;
     padding: 0 80px;
@@ -396,5 +560,36 @@ main {
   .benefit-1,
   .benefit-3 {
     align-self: flex-start;
+  }
+
+  /* PRICING SECTION */
+
+  .price-wrapper {
+    max-width: 920px;
+    align-items: center;
+  }
+
+  .price-copy {
+    max-width: 540px;
+  }
+
+  .card-wrapper {
+    align-items: center;
+    height: 482px;
+    max-width: 910px;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .card {
+    flex: 1;
+  }
+
+  .card-copy_free {
+    padding: 49px 29px 32px 29px;
+  }
+
+  .card-copy_paid {
+    padding: 61px 29px 60px 29px;
   }
 }
