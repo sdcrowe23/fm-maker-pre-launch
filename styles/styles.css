@@ -261,6 +261,10 @@ main {
 
 /* Benefits section */
 
+.benefits-list {
+  margin-bottom: 144px;
+}
+
 .benefits-wrapper {
   max-width: 573px;
   margin: 0 auto;
