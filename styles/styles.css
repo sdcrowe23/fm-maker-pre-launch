@@ -265,6 +265,8 @@ main {
   max-width: 573px;
   margin: 0 auto;
   gap: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .benefit {
@@ -272,11 +274,6 @@ main {
   flex-direction: column;
   max-width: 515px;
   align-items: center;
-  margin-bottom: 56px;
-}
-
-.benefit-end {
-  margin-left: auto;
 }
 
 .benefit-para {
@@ -296,10 +293,6 @@ main {
   text-align: center;
 }
 
-.icon-container img {
-  flex: 1;
-}
-
 /*
 //////// 
 ////////// MEDIA QUERIES
@@ -310,6 +303,11 @@ main {
 @media screen and (min-width: 375px) {
   .hero {
     background-image: url(/imgs/illustration-hero-mobile.png);
+  }
+
+  .benefits-wrapper {
+    align-items: center;
+    gap: 56px;
   }
 }
 
@@ -338,6 +336,16 @@ main {
   .icon-container {
     margin-bottom: 0;
   }
+
+  .benefits-wrapper {
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .benefit-1,
+  .benefit-3 {
+    align-self: flex-end;
+  }
 }
 
 /* Media Queries */
@@ -365,5 +373,24 @@ main {
   .banner-copy {
     max-width: 730px;
     padding: 0 80px;
+  }
+
+  .benefits-wrapper {
+    flex-direction: row;
+    max-width: 1100px;
+    height: 383px;
+    align-items: flex-end;
+  }
+
+  .benefit {
+    flex-direction: column;
+    margin-bottom: 0;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .benefit-1,
+  .benefit-3 {
+    align-self: flex-start;
   }
 }
