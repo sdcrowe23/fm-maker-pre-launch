@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./resources/fm-maker-project.png)
+![](./imgs/fm-maker-project.png)
 
 ### Links
 
