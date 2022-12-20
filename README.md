@@ -14,7 +14,6 @@ This is a solution to the [Maker pre-launch landing page challenge on Frontend M
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -34,31 +33,39 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [maker-pre-launch solution](https://www.frontendmentor.io/solutions/maker-prelaunch-landing-page-sZ3RGFDp54)
 - Live Site URL: [live site on Netlify](https://fm-maker-pre-launch-blckbird.netlify.app/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
+- HTML
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
 - Netlify (for hosting)
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Overall challenges:
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+- Learning to implement a mobile-first process. Althought this may be wrong, my approach was to create the mobile layout/styles first, then use media queiries (min-width) to transition between the various device-widths - specifically focusing on the smaller changes between different device-widths.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+Some of the challenges I faced when building this website:
+
+- Building the header section without directly placing images in the markup, but instead using the :psuedo before/after prefixes to display svg images to the right and left of the body content. This was especially challenge transitioning between different device widths. Although my solution works I will need to revise the markup and CSS. I later learned that the container holding the body content (the outer box) can be used to set those images heights rather than setting the heights of those images, as well as the body content container itself.
+- The section outlining the benefits (directly under the header), at first, presented some challenges. After spending some time I was able to use flexbox to position elements in the staggering stance. I struggled to size the svg icons in their containers. I'm still not sure about how to approach this.
+- The "our pricing" section presented it's own challenges, like, getting the cards to display at different heights. My approach for this was to set max-heights on the cards themselves.
+- I'm still working through the email validation section, using JavaScript and RegEx to validate emails. The challenging part is how to get the error messaging/border to display when a user begins typing an incorrect email, including the the opposite (when a user begins typing a correct email, the border highlights green and no error message).
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+- I would like to focus my efforts on mastering layout using flexbox and CSS grid. Also, I struggle to truly understand positioning (relative, absolute) - for example, how top, bottom, right, and left work and where they inherit their width/heights from.
+
+- Continue learning JavaScript and understanding the various APIs related to frontend web development.
+
+- Continue progressing with Git - specifically work flow. I am able to use basically for my own projects. My goal is to understand pull request, how to structure projects (such as branching etc.).
 
 ### Useful resources
 
@@ -69,14 +76,4 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@sdcrowe23](https://www.frontendmentor.io/profile/sdcrowe23)
