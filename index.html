@@ -243,13 +243,18 @@
           <h2 class="notified-title">Get notified when we launch</h2>
           <form
             name="get-notified"
-            action=""
             method="POST"
             class="notified-form"
             data-netlify="true"
+            netlify-honeypot="bot-field"
           >
+            <div class="hidden">
+              <label>
+                Don’t fill this out if you’re human: <input name="bot-field" />
+              </label>
+            </div>
             <input type="email" placeholder="Email address" />
-            <button>Get notified</button>
+            <button type="submit">Get notified</button>
           </form>
         </div>
       </section>
