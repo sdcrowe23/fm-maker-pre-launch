@@ -427,6 +427,11 @@ main {
 
 /* Footer */
 
+,
+hidden {
+  display: none;
+}
+
 footer {
   margin-bottom: 110px;
   padding: 0 24px;
